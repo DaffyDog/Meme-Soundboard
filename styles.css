@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Staryfont';
+    src: url('fontymuffin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.Btn {
+    width: 30%;
+    background: lightblue;
+    border: blue double 5px;
+    padding: 10px 5px;
+    height: 8%;
+    margin: 10px;
+    font-family: Staryfont, sans-serif;
+    border-radius: 5px;
+}
+body {
+    background: pink;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    font-family: Staryfont, sans-serif;
+}
+.yo {
+    margin-top: auto;
+}
