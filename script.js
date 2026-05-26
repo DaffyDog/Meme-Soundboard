@@ -1,3 +1,4 @@
+//main sounds
 const creeper = new Audio("creeper.mp3")
 const happy = new Audio("happy.mp3")
 const wow = new Audio("wow.mp3")
@@ -10,7 +11,18 @@ const oof = new Audio("oof.mp3")
 const chicken = new Audio("chicken-banana.mp3")
 const doh = new Audio("doh.mp3")
 const naplan = new Audio("naplan.mp3")
+//meme sounds 
+const sixSeven = new Audio("67.mp3")
+const vineBoom = new Audio("vine-boom.mp3")
+const getOut = new Audio("get-out.mp3")
+const android = new Audio("boop.mp3")
+const goofy = new Audio("goofy-laugh.mp3")
 
+
+//HTML ELEMENTS
+const input = document.getElementById("Code")
+const idioticSet = document.getElementById("IdioticSet")
+const memeSet = document.getElementById("MemeSet")
 
 function playCreeper() {
     creeper.play()
@@ -60,3 +72,69 @@ function playNAPLAN() {
     naplan.play()
     console.log("RIP")
 }
+
+//meme set:
+
+function play67() {
+    sixSeven.play()
+    console.log("67")
+}
+function playBoom() {
+    vineBoom.play()
+    console.log("BOOOOOM!")
+}
+function playAndroid() {
+    android.play()
+    console.log("Boop")
+}
+function playGoofy() {
+    goofy.play()
+    console.log("HAHAHA")
+}
+function playGetOut() {
+    getOut.play()
+    console.log("GET OUT!")
+}
+
+function request() {
+    input.style.display = "block"
+}
+
+function init() {
+    input.style.display = "none"
+    idioticSetHide()
+    memeSetHide()
+}
+
+//extra soundsets!
+
+function idioticSetShow() {
+    idioticSet.style.display = "block"
+}
+
+function idioticSetHide() {
+    idioticSet.style.display = "none"
+}
+
+function  memeSetShow() {
+    memeSet.style.display = "block"
+}
+
+function  memeSetHide() {
+    memeSet.style.display = "none"
+}
+
+input.addEventListener('input', function(event) {
+    const value = event.target.value; 
+    if (value==="(:") {
+        console.log("Idiotic Set unlocked")
+        idioticSetShow()
+        alert("Idiotic Set Unlocked!")
+    } else if (value==="meme") {
+        console.log("Meme Set unlocked")
+        memeSetShow()
+        alert("Meme Set Unlocked!")
+    }
+});
+
+init()
