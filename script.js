@@ -1,23 +1,24 @@
 //main sounds
-const creeper = new Audio("creeper.mp3")
-const happy = new Audio("happy.mp3")
-const wow = new Audio("wow.mp3")
-const fail = new Audio("spongebob-fail.mp3")
-const jet2 = new Audio("jet2.mp3")
-const later = new Audio("later.mp3")
-const amongus = new Audio("among-us.mp3")
-const kid = new Audio("kid.mp3")
-const oof = new Audio("oof.mp3")
-const chicken = new Audio("chicken-banana.mp3")
-const doh = new Audio("doh.mp3")
-const naplan = new Audio("naplan.mp3")
+const creeper = new Audio("public/Sounds/creeper.mp3")
+const happy = new Audio("public/Sounds/happy.mp3")
+const wow = new Audio("public/Sounds/wow.mp3")
+const fail = new Audio("public/Sounds/spongebob-fail.mp3")
+const jet2 = new Audio("public/Sounds/jet2.mp3")
+const later = new Audio("public/Sounds/later.mp3")
+const amongus = new Audio("public/Sounds/among-us.mp3")
+const kid = new Audio("public/Sounds/kid.mp3")
+const oof = new Audio("public/Sounds/oof.mp3")
+const chicken = new Audio("public/Sounds/chicken-banana.mp3")
+const doh = new Audio("public/Sounds/doh.mp3")
+const naplan = new Audio("public/Sounds/naplan.mp3")
+const dog = new Audio("./WhatTheDogDoin.mp3")
 //meme sounds 
-const sixSeven = new Audio("67.mp3")
-const vineBoom = new Audio("vine-boom.mp3")
-const getOut = new Audio("get-out.mp3")
-const android = new Audio("boop.mp3")
-const goofy = new Audio("goofy-laugh.mp3")
-
+const sixSeven = new Audio("public/Sounds/Meme/67.mp3")
+const vineBoom = new Audio("public/Sounds/Meme/vine-boom.mp3")
+const getOut = new Audio("public/Sounds/Meme/get-out.mp3")
+const android = new Audio("public/Sounds/Meme/boop.mp3")
+const goofy = new Audio("public/Sounds/Meme/goofy-laugh.mp3")
+const fah = new Audio("public/Sounds/Meme/fah.mp3")
 
 //HTML ELEMENTS
 const input = document.getElementById("Code")
@@ -72,6 +73,10 @@ function playNAPLAN() {
     naplan.play()
     console.log("RIP")
 }
+function playDog() {
+    dog.play()
+    console.log("What The Dog Doin?")
+}
 
 //meme set:
 
@@ -94,6 +99,10 @@ function playGoofy() {
 function playGetOut() {
     getOut.play()
     console.log("GET OUT!")
+}
+function playFah() {
+    fah.play()
+    console.log("FAHHHHHH")
 }
 
 function request() {
